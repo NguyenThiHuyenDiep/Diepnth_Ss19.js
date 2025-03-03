@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let r1 ="javascript"+5;
+        /* Khi thực hiện phép cộng với chuỗi và một số, JavaScript sẽ chuyển số thành chuỗi và nối chúng lại với nhau. Vì vậy, chuỗi "javascript" sẽ được nối với số 5 thành "javascript5".*/
+        let r2="javascript"-1;
+        /*Trong phép trừ, JavaScript cố gắng chuyển đổi cả hai toán hạng thành số. Tuy nhiên, chuỗi "javascript" không thể chuyển đổi thành một số hợp lệ, do đó kết quả là NaN.*/
+        let r3="3"+2;
+        /*Tương tự như trường hợp đầu tiên, khi một chuỗi được cộng với một số, JavaScript sẽ chuyển số thành chuỗi và nối chúng lại. Do đó, "3" (chuỗi) sẽ được nối với 2 (số), tạo thành chuỗi "32".*/
+        let r4="5"-4;
+        /*Trong phép trừ, JavaScript cố gắng chuyển chuỗi "5" thành số. Kết quả là 5 - 4, trả về 1. JavaScript có thể chuyển đổi chuỗi có dạng số thành kiểu số và thực hiện phép trừ.*/
+        let r5=isNaN("123");
+        /*Hàm isNaN() kiểm tra xem giá trị có phải là một số hợp lệ không. "123" là một chuỗi có thể được chuyển đổi thành số hợp lệ, vì vậy isNaN("123") trả về false.*/
+        let r6=isNaN("hello");
+        /*Chuỗi "hello" không thể chuyển đổi thành một số hợp lệ, vì vậy isNaN("hello") trả về true, chỉ ra rằng "hello" không phải là một số hợp lệ.*/
+        let r7=Number.isNaN("123");
+        /*Phương thức Number.isNaN() kiểm tra xem giá trị có phải là NaN (Not-a-Number) hay không. Tuy nhiên, "123" không phải là NaN, mà là một chuỗi có thể chuyển thành số hợp lệ, vì vậy Number.isNaN("123") trả về false.*/
+        let r8=Number.isNaN(NaN);
+        /*Number.isNaN(NaN) sẽ trả về true, vì NaN là chính nó, tức là giá trị "không phải là số". Đây là cách kiểm tra chính xác NaN, không giống như isNaN() mà có thể có một số trường hợp không chính xác khi kiểm tra.*/
+    </script>
+</body>
+</html>

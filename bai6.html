@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = +prompt("Nhập hệ số a: ");
+    let b = +prompt("Nhập hệ số b: ");
+    let c = +prompt("Nhập hệ số c: ");
+    let delta = b*b - 4*a*c;
+    if (a === 0) {
+        console.log("Đây không phải là phương trình bậc 2");
+    } else {
+       let x1 = (-b + Math.sqrt(delta)) / (2*a);
+       let x2 = (-b - Math.sqrt(delta)) / (2*a);
+       alert("Phương trình có hai nghiệm x1 = " + x1 + " và x2 = " + x2);
+    }       
+    </script>
+</body>
+</html>

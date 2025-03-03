@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let money = prompt("Đơn vị tiền tệ  muốn chuyển đổi: 1.VND 2.USD");
+        switch(money) {
+            case "1": 
+                let price = +prompt("Nhập số tiền cần chuyển đổi:");
+                let usd = price / 23000;
+                alert(price + " VND " + " = " + usd.toFixed(2) + " USD");
+                break;
+            case "2":
+                let dollar = +prompt("Nhập số tiền cần chuyển đổi:");
+                let vnd = dollar * 23000;
+                alert(dollar + " USD " + " = " + vnd + " VND");
+                break;
+            default: 
+                alert("Vui lòng nhập lại");
+        }
+    </script>
+</body>
+</html>
